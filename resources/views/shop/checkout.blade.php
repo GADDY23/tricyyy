@@ -78,7 +78,7 @@
               </label>
               <label class="flex items-center">
                 <input type="radio" name="payment_method" value="Bank Transfer" class="mr-2">
-                <span class="text-sm">Pickup Cash</span>
+                <span class="text-sm">Pickup Payment</span>
               </label>
               <label class="flex items-center">
                 <input type="radio" name="payment_method" value="Online Payment" class="mr-2">
@@ -86,7 +86,7 @@
               </label>
               <label class="flex items-center">
                 <input type="radio" name="payment_method" value="Check" class="mr-2">
-                <span class="text-sm">Check Payment</span>
+                <span class="text-sm">Pickup Online Payment</span>
               </label>
             </div>
           </div>

@@ -20,3 +20,5 @@ Route::get('/receipt', [BarakoController::class, 'receipt'])->name('receipt');
 Route::get('/categories', [BarakoController::class, 'categories'])->name('categories');
 Route::get('/orders', [BarakoController::class, 'orders'])->name('orders');
 Route::get('/sales', [BarakoController::class, 'sales'])->name('sales');
+// Services page (static view)
+Route::get('/services', function(){ return view('services'); })->name('services');

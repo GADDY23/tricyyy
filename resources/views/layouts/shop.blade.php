@@ -32,6 +32,7 @@
 
         <nav class="hidden sm:flex items-center gap-4">
           <a href="#" class="text-sm text-white">Categories</a>
+          <a href="{{ route('services') }}" class="text-sm text-white">Services</a>
           <a href="#" class="text-sm text-white">Help</a>
         </nav>
 
@@ -61,9 +62,17 @@
     </main>
 
     <footer class="bg-white border-t mt-8">
-      <div class="max-w-6xl mx-auto px-4 py-4 text-sm text-gray-600 flex items-center justify-between">
-        <div>Secure Checkout | Barako-Ready Parts | Fast Service</div>
-        <div class="text-gray-400">© {{ date('Y') }} Barako Parts Shop</div>
+      <div class="max-w-6xl mx-auto px-4 py-4 text-sm text-gray-600 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div class="text-gray-800">
+          <div class="font-semibold">Shop Location & Schedule</div>
+          <div class="text-sm">123 Rizal St., Barangay Uno, Sample City</div>
+          <div class="text-sm mt-1">Hours: Mon–Sat 8:00 AM — 6:00 PM</div>
+          <div class="text-sm mt-1">Contact: <a href="tel:+639171234567" class="text-kawasaki font-medium">+63 917 123 4567</a> • <a href="https://facebook.com/YourPage" target="_blank" class="text-kawasaki font-medium">Facebook</a></div>
+        </div>
+
+        <div class="hidden sm:block text-gray-600">Secure Checkout | Barako-Ready Parts | Fast Service</div>
+
+        <div class="text-gray-400 sm:text-right">© {{ date('Y') }} Barako Parts Shop</div>
       </div>
     </footer>
 
