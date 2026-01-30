@@ -63,6 +63,11 @@
             <input type="tel" name="customer_phone" required class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white">
           </div>
 
+          <div>
+            <label class="block text-sm font-medium mb-1">Address</label>
+            <textarea name="customer_address" rows="3" required class="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white"></textarea>
+          </div>
+
           <!-- Payment Method -->
           <div>
             <label class="block text-sm font-medium mb-2">Payment Method</label>

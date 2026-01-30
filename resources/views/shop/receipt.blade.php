@@ -40,6 +40,9 @@
             @if($order['customer_email'])
               <p class="text-gray-600">{{ $order['customer_email'] }}</p>
             @endif
+            @if($order['customer_address'])
+              <p class="text-gray-600 mt-2">{{ $order['customer_address'] }}</p>
+            @endif
           </div>
         </div>
 

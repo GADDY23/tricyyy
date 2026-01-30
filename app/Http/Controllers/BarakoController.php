@@ -219,6 +219,7 @@ class BarakoController extends Controller
         $customerName = $request->input('customer_name', 'Guest');
         $customerEmail = $request->input('customer_email', '');
         $customerPhone = $request->input('customer_phone', '');
+        $customerAddress = $request->input('customer_address', '');
 
         // Calculate total
         $total = 0;
@@ -233,6 +234,7 @@ class BarakoController extends Controller
             'customer_name' => $customerName,
             'customer_email' => $customerEmail,
             'customer_phone' => $customerPhone,
+            'customer_address' => $customerAddress,
             'items' => $cart,
             'payment_method' => $paymentMethod,
             'subtotal' => $total,
