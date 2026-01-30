@@ -18,8 +18,8 @@
         <a href="{{ route('home') }}" class="flex items-center gap-3">
           <div class="w-10 h-10 rounded bg-gradient-to-br from-[#0b6e3b] to-[#083a25] flex items-center justify-center text-white font-bold">B</div>
           <div class="hidden sm:block">
-            <div class="font-semibold text-white">Barako Parts Shop</div>
-            <div class="text-xs text-white">Mechanical • Kawasaki Theme</div>
+            <div class="font-semibold text-white">TRI MOTOSHOP</div>
+            <div class="text-xs text-white">Motorparts • Kawasaki Compatible</div>
           </div>
         </a>
 
