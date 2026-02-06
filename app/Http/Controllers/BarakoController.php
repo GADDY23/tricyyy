@@ -188,10 +188,13 @@ class BarakoController extends Controller
     public function receipt()
     {
         $order = Session::get('last_order');
-        if (!$order) {
+        if ($order && $order instanceof Order) {
+            // Reload from database to ensure relationships are loaded
+            $order = Order::with('items')->find($order->id);
+        } else {
             $orderId = request()->query('order_id');
             if ($orderId) {
-                $order = Order::find($orderId);
+                $order = Order::with('items')->find($orderId);
             }
             if (!$order) {
                 return redirect()->route('home');
